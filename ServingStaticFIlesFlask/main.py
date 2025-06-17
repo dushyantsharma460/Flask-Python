@@ -11,3 +11,8 @@ def hello_world():
     return render_template("index.html")
 
 app.run(port=9000, debug=True, host="dushyantfile")
+
+# Custom your local host with   -> this cmd -> sudo nano /etc/hosts
+# Edit as you want like     ->     127.0.0.1   dushyantfile
+
+# Use this in code  ->   app.run(port=9000, debug=True, host="dushyantfile")
