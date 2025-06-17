@@ -11,4 +11,6 @@ app = Flask(__name__)      # create new flask app
 def hello_world(): 
     return render_template("index.html")
 
-app.run(debug=True)
+app.run(debug=True)  # i want to run this in debug mode means you show error on my html page.
+
+# Usually this don't show error on the page 

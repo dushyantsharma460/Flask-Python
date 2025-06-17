@@ -3,88 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Frosted UI Page</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Segoe UI", sans-serif;
-    }
-
-    body {
-      height: 100vh;
-      background: linear-gradient(to right, #667eea, #764ba2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .glass-card {
-      width: 350px;
-      padding: 30px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 20px;
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      color: white;
-      text-align: center;
-      animation: fadeIn 1.5s ease-out;
-    }
-
-    .glass-card h1 {
-      margin-bottom: 20px;
-      font-size: 2em;
-    }
-
-    .glass-card p {
-      font-size: 1em;
-      margin-bottom: 25px;
-    }
-
-    .glass-card button {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 30px;
-      background: #ffffff33;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s ease;
-    }
-
-    .glass-card button:hover {
-      background: white;
-      color: #764ba2;
-    }
-
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @media (max-width: 400px) {
-      .glass-card {
-        width: 90%;
-        padding: 20px;
-      }
-    }
-  </style>
+  <title>Simple One Page</title>
 </head>
 <body>
-  <div class="glass-card">
-    <h1>Welcome 👋</h1>
-    <p>This is a modern frosted glass UI design built with only HTML and CSS.</p>
-    <button onclick="alert('Thank you for clicking!')">Click Me</button>
-  </div>
+
+  <header>
+    <h1>🌟 Welcome to My Page</h1>
+  </header>
+  
 </body>
 </html>
