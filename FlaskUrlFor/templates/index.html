@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Is the way that i can dynamically gernate the value for href ?? Yes!! By url_for-->
+    <!-- <link rel="stylesheet" href="static/anotherStyle.css"> -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'anotherStyle.css' ) }}">
+
+    <!-- Now i will change in main.py   static_url_path="/public"  now it will change the path automatically in the browser -->
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- Now i am confuse that what path i will give for styling my this web page in style tag -->
+
+   <h1>Dushyant Sharma</h1>
+   <h2>From Haryana Sirsa</h2>
+
+</body>
+</html>
