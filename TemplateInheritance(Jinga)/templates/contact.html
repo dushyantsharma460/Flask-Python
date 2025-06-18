@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Wilderness Zoo{% endblock %}
+
+{% block content %}
+<h1>Roar at Us!</h1>
+<div style="display: flex; gap: 2rem;">
+    <div style="flex: 1;">
+        <h2 style="color: var(--jungle-green);">📬 Contact Information</h2>
+        <p><strong>Address:</strong><br>123 Jungle Trail, Wildlife City</p>
+        <p><strong>Phone:</strong><br>(555) 123-4567</p>
+        <p><strong>Email:</strong><br>hello@wildernesszoo.com</p>
+        
+        <div style="margin-top: 2rem;">
+            <h3 style="color: var(--animal-orange);">🦉 Follow Our Adventures</h3>
+            <div style="display: flex; gap: 1rem; font-size: 2rem; margin-top: 0.5rem;">
+                <span>📱</span>
+                <span>📷</span>
+                <span>🎥</span>
+                <span>💙</span>
+            </div>
+        </div>
+    </div>
+    
+    <div style="flex: 1; background: #fff9e6; padding: 1.5rem; border-radius: 10px; border: 2px solid var(--safari-tan);">
+        <h2 style="color: var(--animal-orange);">📝 Send a Message</h2>
+        <form style="margin-top: 1rem;">
+            <div style="margin-bottom: 1rem;">
+                <label style="display: block; margin-bottom: 0.3rem; font-weight: bold;">Your Name:</label>
+                <input type="text" style="width: 100%; padding: 0.5rem; border: 2px solid #ddd; border-radius: 5px; background: #fff;">
+            </div>
+            <div style="margin-bottom: 1rem;">
+                <label style="display: block; margin-bottom: 0.3rem; font-weight: bold;">Email:</label>
+                <input type="email" style="width: 100%; padding: 0.5rem; border: 2px solid #ddd; border-radius: 5px; background: #fff;">
+            </div>
+            <div style="margin-bottom: 1rem;">
+                <label style="display: block; margin-bottom: 0.3rem; font-weight: bold;">Message:</label>
+                <textarea style="width: 100%; padding: 0.5rem; border: 2px solid #ddd; border-radius: 5px; min-height: 150px; background: #fff;"></textarea>
+            </div>
+            <button type="submit" style="background: var(--animal-orange); color: white; padding: 0.7rem 1.5rem; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; transition: all 0.3s;">
+                Send Message 🦜
+            </button>
+        </form>
+    </div>
+</div>
+
+<div style="margin-top: 2rem; text-align: center; background: #e8f4f8; padding: 1rem; border-radius: 10px; border: 2px dashed var(--sky-blue);">
+    <h3 style="color: var(--water-blue);">🗺️ How to Find Us</h3>
+    <div style="font-size: 3rem; margin: 0.5rem 0;">🦒🚗🦏</div>
+    <p>Free parking available | Wheelchair accessible | Stroller rentals</p>
+</div>
+{% endblock %}

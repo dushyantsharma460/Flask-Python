@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilderness Zoo | {% block title %}{% endblock %}</title>
+    <style>
+        :root {
+            --jungle-green: #2d5a27;
+            --safari-tan: #e1c16e;
+            --animal-orange: #e67e22;
+            --sky-blue: #3498db;
+            --water-blue: #2980b9;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f7e8;
+            background-image: url('https://i.imgur.com/ZYdX3yT.png');
+            background-size: 300px;
+            background-blend-mode: overlay;
+            color: #333;
+        }
+        
+        nav {
+            background: var(--jungle-green);
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 10;
+        }
+        
+        nav:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: linear-gradient(90deg, 
+                #f1c40f, #e67e22, #e74c3c, #9b59b6, 
+                #3498db, #2ecc71, #f1c40f);
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            padding: 0.5rem 1rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            transition: all 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--safari-tan);
+            transform: scale(1.1);
+        }
+        
+        nav a:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 3px;
+            background: var(--safari-tan);
+            transition: width 0.3s;
+        }
+        
+        nav a:hover:after {
+            width: 100%;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            min-height: 70vh;
+        }
+        
+        .zoo-content {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 3px dashed var(--jungle-green);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .zoo-content:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background-image: url('https://i.imgur.com/JQJZQyL.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.1;
+            z-index: 0;
+        }
+        
+        footer {
+            background: var(--jungle-green);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            position: relative;
+        }
+        
+        h1 {
+            color: var(--jungle-green);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px dotted var(--animal-orange);
+            position: relative;
+        }
+        
+        h1:after {
+            content: "🐘";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .animal-print {
+            background-image: url('https://i.imgur.com/XwZQ9yL.png');
+            background-size: 200px;
+            opacity: 0.05;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">🦁 Home</a>
+        <a href="/about">🐵 About</a>
+        <a href="/contact">🐯 Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="zoo-content">
+            <div class="animal-print"></div>
+            <!-- I can fill this place while i am extending this template -->
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+    
+    <footer>
+        Wilderness Zoo &copy; 2023 | Come explore the animal kingdom!
+    </footer>
+</body>
+</html>

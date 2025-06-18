@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}About Wilderness Zoo{% endblock %}
+
+{% block content %}
+<h1>Our Wild Story</h1>
+<div style="display: flex; gap: 2rem; margin-bottom: 2rem; align-items: center;">
+    <div style="flex: 2;">
+        <h2 style="color: var(--jungle-green);">🌿 Mission</h2>
+        <p>Founded in 1985, Wilderness Zoo is dedicated to wildlife conservation, education, and providing unforgettable animal encounters.</p>
+        
+        <h2 style="color: var(--jungle-green); margin-top: 1.5rem;">🦜 Conservation</h2>
+        <p>We participate in 15 species survival programs and have successfully reintroduced 8 species back into the wild.</p>
+    </div>
+    <div style="flex: 1; text-align: center; background: #f9f3e6; padding: 1rem; border-radius: 10px; border: 2px dashed var(--animal-orange);">
+        <div style="font-size: 5rem;">🐘</div>
+        <h3>By the Numbers</h3>
+        <p>200+ Animal Species</p>
+        <p>50 Acres of Habitat</p>
+        <p>1 Million Visitors Yearly</p>
+    </div>
+</div>
+
+<div style="background: #f0f8ff; padding: 1.5rem; border-radius: 10px; border: 2px solid var(--sky-blue); margin-top: 1.5rem;">
+    <h2 style="color: var(--water-blue);">🦁 Meet Our Team</h2>
+    <div style="display: flex; justify-content: space-around; text-align: center; margin-top: 1rem;">
+        <div>
+            <div style="font-size: 3rem;">👨‍⚕️</div>
+            <p>Veterinarians</p>
+        </div>
+        <div>
+            <div style="font-size: 3rem;">👩‍🌾</div>
+            <p>Keepers</p>
+        </div>
+        <div>
+            <div style="font-size: 3rem;">👨‍🏫</div>
+            <p>Educators</p>
+        </div>
+        <div>
+            <div style="font-size: 3rem;">👩‍🔬</div>
+            <p>Researchers</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
